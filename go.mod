@@ -7,6 +7,7 @@ require (
 	github.com/astaxie/beego v1.12.2
 	github.com/boombuler/barcode v1.0.0
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
+	github.com/eclipse/paho.mqtt.golang v1.2.0
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-ini/ini v1.61.0
 	github.com/gohouse/converter v0.0.3
@@ -14,6 +15,7 @@ require (
 	github.com/jinzhu/gorm v1.9.16
 	github.com/jung-kurt/gofpdf v1.16.2
 	github.com/nanjishidu/gomini v1.4.1
+	github.com/pkg/errors v0.8.1
 	github.com/qiniu/api.v7/v7 v7.6.0 // indirect
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/swaggo/gin-swagger v1.2.0 // indirect

@@ -2,6 +2,7 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
+	v1 "wss/controller/v1"
 
 	"fmt"
 	"github.com/unrolled/secure"
@@ -18,9 +19,10 @@ func InitRouter() *gin.Engine {
 
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
-
 	r.Use(app_middleware.App())
 
+	apiv1 := r.Group("/api/v1")
+	apiv1.POST("/push_mqtt_msg", v1.PushMqttMsg)
 	return r
 }
 

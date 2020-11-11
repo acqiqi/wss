@@ -9,8 +9,8 @@ import (
 	"wss/lib/gredis"
 	"wss/lib/logging"
 	"wss/lib/setting"
-	"wss/lib/utils"
 	"wss/models"
+	"wss/mqtt"
 	"wss/router"
 	_ "wss/task"
 )
@@ -22,10 +22,9 @@ func init() {
 	models.Setup()  //模型
 	logging.Setup() //日志
 	gredis.Setup()  // redis
+	mqtt.Init()
 	//utils.InitModel()
 	//utils.PDFT()
-	log.Println(utils.FormatCamelString("asd_asd", false))
-
 }
 
 func main() {

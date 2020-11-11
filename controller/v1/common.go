@@ -2,9 +2,9 @@ package v1
 
 import (
 	"github.com/gin-gonic/gin"
+	"wss/lib/e"
 )
 
-// 发货列表
-func SendList(c *gin.Context) {
-
+func PushMqttMsg(c *gin.Context) {
+	e.ApiOk(c, "mdzz", e.GetEmptyStruct())
 }
